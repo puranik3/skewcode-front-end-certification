@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: lightpink;
+            }
+
+            /*
+            td:nth-child(1), td:nth-child(2) {
+                background-color: olive;
+            }
+            */
+        </style>
+    </head>
+    <body>
+        <table> <!-- table -->
+            <caption>Fruits</caption>
+            <thead> <!-- table head -->
+                <tr> <!-- table rows -->
+                    <colgroup>
+                        <th>Fruit</th>
+                        <th>Color</th>
+                    </colgroup>
+                    <th>Season</th>
+                </tr>
+            </thead>
+            <tbody> <!-- table body -->
+                <tr>
+                    <td rowspan="2">Orange</td> <!-- table data cells -->
+                    <td rowspan="2">Orange</td>
+                    <td>Summer</td>
+                </tr>
+                <tr>
+                    <td>Winter</td>
+                </tr>
+                <tr>
+                    <td>Apple</td>
+                    <td>Red</td>
+                    <td>Winter</td>
+                </tr>
+                <tr>
+                    <td>Mango</td>
+                    <td>Yellow</td>
+                    <td>Summer</td>
+                </tr>
+                <tr>
+                    <td>Litchi</td>
+                    <td>Red</td>
+                    <td>Winter</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
