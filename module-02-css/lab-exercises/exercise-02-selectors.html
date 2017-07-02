@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Selectors</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .panel {
+                border: 1px solid crimson;
+            }
+
+            .panel-heading, .panel-body {
+                padding: 10px;
+            }
+
+            .panel-heading {
+                background-color: lightpink;
+                cursor: pointer;
+            }
+
+            .panel-body {
+                display: none;
+            }
+
+            .panel-heading:hover + .panel-body {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <div class="panel-heading">
+                Hover over me
+            </div>
+            <div class="panel-body">
+                Yay! You now see my contents.
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-heading">
+                Hover over me as well
+            </div>
+            <div class="panel-body">
+                Yay! You now see my contents as well.
+            </div>
+        </div>
+    </body>
+</html>

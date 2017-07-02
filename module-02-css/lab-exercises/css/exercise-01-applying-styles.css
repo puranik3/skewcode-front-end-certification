@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+p:first-letter {
+    font-size: 1.5em;
+    color: crimson;
+}
+
+a {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+#primary-menu {
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#primary-menu li {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+#primary-menu a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid crimson;
+    text-align: center;
+    text-decoration: none;
+    color: crimson;
+}
+
+#primary-menu a:hover, #primary-menu a.active {
+    background-color: lightpink;
+}
