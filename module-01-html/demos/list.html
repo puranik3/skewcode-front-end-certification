@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lists in HTML</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            ul {
+                list-style-type: none; /* square, circle, disc etc. */
+                padding: 0;
+            }
+
+            ul li {
+                display: inline-block; /* inline does not allow width setting. block results in new line for each item. so we use inline-block (best of both worlds) */
+                width: 200px;
+            }
+
+            ol {
+                list-style-type: lower-roman; /* lower-alpha, upper-arabic etc. */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lists in HTML</h1>
+        <h2>Ordered and unordered list</h2>
+
+        <h3>Unordered list</h3>
+        <hr/>
+        <ul> <!-- unordered lists -->
+            <li>Apples</li> <!-- list item -->
+            <li>Bananas</li>
+            <li>Oranges</li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <h4>List of holidays in 2017</h4>
+        <ol>
+            <li>January 26</li>
+            <li>March 13</li>
+            <li>May 1</li>
+            <li>August 15</li>
+        </ol>
+    </body>
+</html>
