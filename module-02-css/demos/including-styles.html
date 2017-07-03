@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Including styles in you page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- 
+            embedded styles and included stylesheet have equal importance
+            The last one wins
+        -->
+        <!-- embedded styles (CSS embedded within HTML) -->
+        <style>
+            /* id selector is more specific than class */
+            /* every selector has a value called specificity */
+            /* (a, b, c, d) */
+            /* (inline or nor => 0/1, #ids, #classes, #tags ) */
+
+            /* (0, 1, 1, 0) */
+            .intro #my-para {
+                color: black;
+            }
+
+            /* (0, 1, 0, 0) */
+            #my-para {
+                color: blue;
+                color: yellow;
+                font-size: 12px;
+                border: 1px solid black;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            /* (0, 0, 1, 0) */
+            .some-para {
+                color: gray;
+                font-size: 14px;
+            }
+        </style>
+        <link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- inline styles are most "specific" -->
+        <!-- more specific the style, more the importance -->
+        <!-- <p style="color: red;">Some paragraph</p> <!-- inline styles -->
+        <div class="intro">
+            <p id="my-para" class="some-para">Some paragraph</p>
+        </div>
+    </body>
+</html>
